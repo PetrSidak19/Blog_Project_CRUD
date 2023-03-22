@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs-cz" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="~{fragments/layout.html :: head}"></head>
+<body>
+
+</body>
+<header th:replace="~{fragments/layout.html :: header}"></header>
+
+<article>
+  <div id="centrovac">
+    <section>
+      <table id="dovednosti">
+        <tr class="centrovany">
+          <td>
+            <img th:src="@{/images/html.png}" alt="HTML"/>
+          </td>
+          <td>
+            <img width="45%" th:src="@{/images/181_Java-256.webp}" alt="Java"/>
+          </td>
+          <td>
+            <img  th:src="@{/images/everything_must_know_spring_boot_application_scratch_12_8c4e62d4fe.jpg}" width="65%"  alt="Spring"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>HTML</h2>
+            <p>
+              S HTML začínám a umím vytvořit jednoduché webové stránky, jako jsou tyto.
+            </p>
+          </td>
+          <td>
+            <h2>Java</h2>
+            <p>
+              Javu se učím z tutoriálů na ITnetwork, dokáži tvořit jednoduché desktopové aplikace a ,,malé" CRUD webové aplikace za pomoci MySQL databáze.
+              </p>
+          </td>
+          <td>
+            <h2>SpringBoot</h2>
+            <p>
+              Přes Springboot zvládnu vytvořit jednoduchý full-stack projekt.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </div>
+</article>
+
+<footer th:replace="~{fragments/layout.html :: footer}"></footer>
+</html>

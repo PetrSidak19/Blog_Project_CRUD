@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs-cz" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="~{fragments/layout.html :: head}"></head>
+<body>
+
+</body>
+<header th:replace="~{fragments/layout.html :: header}"></header>
+
+<article>
+  <div id="centrovac">
+    <section>
+      <p class="bold" >Níže naleznete ukázku mého portfolia za pomoci HTML&CSS. Mohu Vám nabídnout tvorbu podobného webu na
+        zakázku.</p>
+
+      <div id="reference">
+        <a  th:href="@{/images/Snímek obrazovky (148).png}" title="Snímek portfolia" rel="lightbox[reference]">
+          <img width="34%" th:src="@{/images/Snímek obrazovky (148).png}" alt="Snímek portfolia"/>
+        </a>
+        <a th:href="@{/images/Snímek obrazovky (149).png}" title="Snímek portfolia" rel="lightbox[reference]">
+          <img width="34%" th:src="@{/images/Snímek obrazovky (149).png}" alt="Snímek portfolia"/>
+        </a>
+        <a th:href="@{/images/Snímek obrazovky (150).png}"  title="Snímek portfolia" rel="lightbox[reference]" >
+          <img width="34%" th:src="@{/images/Snímek obrazovky (150).png}" alt="Snímek portfolia"/>
+        </a>
+      </div>
+    </section>
+  </div>
+</article>
+
+<footer th:replace="~{fragments/layout.html :: footer}"></footer>
+</html>

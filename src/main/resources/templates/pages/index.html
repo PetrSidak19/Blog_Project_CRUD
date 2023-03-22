@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs-cz" xmlns:th="">
+<head th:replace="~{fragments/layout.html :: head}"></head>
+<body>
+<header th:replace="~{fragments/layout.html :: header}"></header>
+
+<article>
+    <div id="centrovac" class="domu-article">
+        <header>
+            <h1>O mně</h1>
+        </header>
+
+        <section>
+            <p>
+                V době před covidem jsem bydlel v Rakouských Alpách, kde jsem se vypracoval na vedoucího restaurace,
+                bohužel kvůli dané situaci způsobené covidem jsem se vrátil do Čech, zde jsem se nějakou dobu hledal a snažil se uchytit někde,
+                kde bych mohl opět růst, což nebylo v té chvíli moc možné opět ,,díky" covidu. Dva měsíce po návratu jsem šel pracovat do fabriky jako programátor CNC strojů,
+                věc kterou jsem myslel, že jsem opustil nadobro. Jakmile byla možnost práci jsem opustil a zkusil to jako obchodní zástupce, zde jsem byl nějakou dobu spokojený,
+                ale pořád jsem necítil  oheň, který by chtěl vzplanout, abych měl chuť se posouvat v dané sféře. Už nějakou dobu jsem přemýšlel o IT, ale nevěděl jsem jak začít,
+                a proto jsem se rozhodl, že se tomu budu nějakým způsobem věnovat a zajímat se o to. No, stalo se, že mne to bavilo natolik,
+                abych tomu dal přednost před prací a začal se tomu věnovat naplno. Momentálně se rekvalifikuji na junior Java programátora.
+                Věnuji se programování krátké tři měsíce, ale vím, že jakmile dostanu příležitost někde pracovat jako programátor, zvládnu prosadit své kvality.
+            </p>
+
+            <p>
+               Kontaktovat mě můžete na
+            <a th:href="@{/contact}">kontaktní stránce</a>.
+           </p>
+
+            <p class="tlacitko-odstavec">
+                <a th:href="@{/references}" class="reference-tlacitko">Moje reference</a>
+            </p>
+        </section>
+
+        <img th:class="avatar" th:src="@{/images/man-7597809_960_720.jpg}" alt="Brad Pitt"/>
+    </div>
+</article>
+
+<footer th:replace="~{fragments/layout.html :: footer}"></footer>
+</body>
+</html>
